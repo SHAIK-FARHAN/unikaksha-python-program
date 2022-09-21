@@ -255,6 +255,181 @@ pi=3.14
 print('%.2f' %(pi*d*d))
 *----------------------------------------------------*
 
+#(8)Fencing the ground
+'''The college ground is rectangular in shape. The Management decides to build a fence around the ground. In order to help the construction workers to build a straight fence, they planned to place a thick rope around the ground. They wanted to buy only the exact length of the rope that is needed. They also wanted to cover the entire ground with a thick carpet during rainy season. They wanted to buy only the exact quantity of carpet that is needed. They requested your help. Can you please help them by writing a program to find the exact length of the rope and the exact quantity of carper that is required? 
+
+Input Format: 
+
+Input consists of 2 integers. 
+
+The first integer corresponds to the length of the ground 
+
+The second integer corresponds to the breadth of the ground. 
+
+Output Format:  
+
+First output is corresponds to the length of the rope.
+
+Second output is corresponds to the quantity of the carpet.
+
+SAMPLE  INPUT:
+
+50
+
+20
+
+SAMPLE OUTPUT:
+
+Required length is 140 m
+
+Required quantity of carpet is 1000 sqm'''
+#program
+l=int(input( ))
+b=int(input( ))
+p=2*(l+b)
+A=l*b
+print("Required length is",p,"m")
+print("Required quantity of carpet is",A,"sqm")
+*------------------------------------------------------*
+
+#(9)Power of a Number
+'''pow() function is used to calculate the power of any base and it is defined in math header file. Write a program to read X as the base and N as the power and calculate the result (X^N - X to the power of N). 
+
+Input format: 
+
+The first line containing integer denotes the base(X) 
+
+The second line containing integer denotes the power(N) 
+
+Output format: 
+
+Print the power of a number
+
+Sample Input:
+
+ 2
+
+ 3
+
+ Sample Output:
+
+ 8'''
+#program
+a=int(input( ))
+b=int(input( ))
+print(pow(a,b))
+*----------------------------------*
+
+#(9)Simple Interest
+'''Sara wished to build a new house but she didn't have a sufficient amount. So, she is planning to borrow some money from the bank on simple interest. When she is borrowing some money from the bank, she has to pay back the original amount accompanied by a certain amount of interest on that amount. She wants to find the interest for borrowed money within a certain period. Help her to find the simple interest. 
+
+Input format: 
+
+The first line containing integer value denoting the borrowed amount(principal amount) 
+
+The second line containing integer value denoting the period in years 
+
+The third line containing float value denoting the rate of interest 
+
+Output format: 
+
+Print the simple interest with 2 decimal places.
+
+Sample Input:
+
+15000
+
+2
+
+2.8
+
+Sample Output:
+
+840.00'''
+#program
+p=int(input( ))
+t=int(input( ))
+r=float(input( ))
+print((p*t*r)/100)
+*----------------------------------*
+
+#(10)Splitting into Teams
+'''During the Physical Education hour, PET sir has decided to conduct some team games. He wants to split the students in the class into equal sized teams. In some cases, there may be some students who are left out from teams and he wanted to use the left out students to assist him in conducting the team games. For instance, if there are 50 students in the class and if the class has to be divided into 7 equal sized teams, 7 students will be there in each team and 1 student will be left out. PET sir asks your help to automate this team splitting task. Can you please help him out? 
+
+Input Format: 
+
+Input consists of 2 integers. 
+
+The first integer corresponds to the number of students in the class 
+
+The second integer corresponds to the number of teams. 
+
+Output Format: 
+
+Refer sample input and output for formatting specifications.
+
+Sample Input :
+
+60 
+
+8
+
+SAMPLE OUTPUT:
+
+The number of students in each team is 7 and left out is 4'''
+#program
+a=int(input( ))
+b=int(input( ))
+c=(a//b)
+d=(a%b)
+print(f"the number of students in each team is {c}'and left out is {d}")
+*-------------------------------------------------------*
+
+#(11)Three Idiots
+'''Ajay, Binoy and Chandru were very close friends at school. They were very good in Mathematics and they were the pet students of Emily Mam. Their gang was known as 3-idiots. Ajay, Binoy and Chandru live in the same locality. A new student Dinesh joins their class and he wanted to be friends with them. He asked Binoy about his house address. Binoy wanted to test Dinesh's mathematical skills. Binoy told Dinesh that his house is at the midpoint of the line joining Ajay's house and Chandru's house. Dinesh was puzzled. Can you help Dinesh out? Given the coordinates of the 2 end points of a line (x1,y1) and (x2,y2), write a python program to find the midpoint of the line. 
+
+Input Format: 
+
+Input consists of 4 integers. 
+
+The first integer corresponds to x1 . 
+
+The second integer corresponds to y1. 
+
+The third and fourth integers correspond to x2 and y2 respectively. 
+
+Output Format: 
+
+Refer Sample Input and Output for exact formatting specifications. [All floating point values are displayed correct to 1 decimal place]
+
+Sample Input:
+
+ 2
+
+ 4
+
+ 10
+
+ 15
+
+Sample Output:
+
+Binoy's house is located at (6.0,9.5)'''
+#program
+x1=int(input( ))
+y1=int(input( ))
+x2=int(input( ))
+y2=int(input( ))
+m1=(x1+x2)/2
+m2=(y1+y2)/2
+print("Binoy's house is located at",(m1,m2))
+*----------------------------------------------*
+
+
+
+
+
+
 
 
 
