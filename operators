@@ -179,3 +179,84 @@ e=float(input( ))
 print((a+b+c+d+e)/5)
 *----------------------------------------*
 
+#(6)Alice in Wonderland
+'''Alice was bored that day,so she was sitting on the riverbank .Suddenly she notices a talking, White Rabbit with a pocket watch .It ran fast,and she followed it, down a rabbit hole .She fell into the hole and found a magical wonderland with dark trees, beautiful flowers.She found many ways numbered from 1,2,3,........18.she was confused which is the right way that will lead her to her home. She found a cute bird, standing in one of the tree. Alice asked the bird the way to go back to her home.The bird said a two digit number( say 23 ) and asked her to find the sum of its digits (2+3=5) and that numbered way will lead her to her home.Alice was already confused, so pls help Alice in finding the route to her home.... 
+
+Input Format: 
+
+Input consists of an integer corresponding to the 2-digit number. 
+
+Output Format:
+
+Output consists of an integer corresponding to the sum of its digits.
+
+ Refer sample input and output for formatting specifications. [All text in bold corresponds to input and the rest corresponds to output]
+
+SAMPLE INPUT  :
+
+23
+
+SAMPLE OUTPUT:
+
+5'''
+#program
+a=int(input( ))
+b=a//10
+c=a%10
+print(b+c)
+*---------------------------------------------*
+
+#(7)Area Calculation
+'''Sheela has three things in her bag. She wants to compute the area of 3 things but 3 things are in different shapes. The three things are in square shape, rectangular shape, and circular shape respectively. Write a program to help Sheela to calculate the area of different shapes. 
+
+Input format: 
+
+First input: a side of a square in integer 
+
+Second input: length of a rectangle in integer 
+
+Third input: breadth of a rectangle in integer 
+
+Fourth input: radius of a circle in float 
+
+Output format: 
+
+The first output should be the area of a square in integer 
+
+The second output should be the area of a rectangle in integer 
+
+The third output should be the area of a circle in float with 2 decimal places
+
+Sample Input: 
+
+5
+
+5
+
+4
+
+2.0
+
+Sample Output: 
+
+25
+
+20
+
+12.56'''
+#program
+a=int(input( ))
+l=int(input( ))
+b=int(input( ))
+d=float(input( ))
+print(a**2)
+print(l*b)
+pi=3.14
+print('%.2f' %(pi*d*d))
+*----------------------------------------------------*
+
+
+
+
+
+
