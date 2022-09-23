@@ -578,6 +578,224 @@ else:
     print("no")
 *-----------------------------------------------------*
 
+#(11)Budget
+'''It’s your job to calculate the cost of replacing damaged battle droids and to check whether it is within the budget limit of Rs. 15000. The cost of the equipment and parts is given in the table below.
+
+Blast Rifle
+
+Rs. 350.34
+
+Visual Sensors
+
+Rs. 230.90
+
+Auditory Sensors
+
+Rs. 190.55
+
+Arms
+
+Rs. 125.30
+
+Legs
+
+Rs. 180.90
+
+Can you write a program to do the given task?
+
+Input:
+
+The input consists of 5 positive integers separated by a space (A B C D E).
+
+A: number of blast rifles needed
+
+B: number of visual sensors needed
+
+C: number of auditory sensors needed
+
+D: number of arms needed
+
+E: number of legs needed
+
+Output:
+
+Output consists of a single string (“yes” or “no”). Print yes if the total cost of replacing damaged battle droids is within the sanctioned budget of Rs. 15000. Print no otherwise.
+
+Sample Input:
+
+20 10 14 3 9
+
+Sample Output:
+
+yes'''
+#program
+a=int(input( ))
+b=int(input( ))
+c=int(input( ))
+d=int(input( ))
+e=int(input( ))
+p=a*350.34
+q=b*230.90
+r=c*190.55
+s=d*125.30
+t=e*180.90
+z=p+q+r+s+t
+if z<=15000:
+    print("yes")
+else:
+    print("no")
+*--------------------------------------------------*
+
+#(12)Sece Dining
+'''The catering staff in the SECE mess are known for their good cooking skills as well as hospitality. We all know that the dining table arrangement needs to be different for left handed and right handed persons. So whenever any VIP guests come to SECE, they would make the table arrangements based on whether they are left handed or right handed. The mess is situated in the 15th floor of the hostel building. SECE hostel building has superfast elevators to help to travel from one floor to another. Each elevator has 2 doors, the front one and the rear one. If a person enters the elevator through the front door, he goes out through the rear door and vice-versa. The elevator has 2 rails numbered as 1 and 2. Rail 1 is located to the left of the entrance to the front door (or correspondingly, to the right of the entrance to the rear door). Rail 2 is located opposite it, to the right of the entrance to the front door and to the left of the entrance to the rear door. We know that each person holds at the rail with his/her strongest hand. There is an IP camera in the elevator and based on the camera output, the catering staff will be easily able to identify whether a guest is left handed or right handed. They have decided to automate this task and they asked the help of Image Processing Group. The Image Processing Group has written a program to perform this task and the program will output the door through which the person entered and the rail number which the person held. Based on this input, can you write a program to determine whether a person is left handed or right handed?
+
+Input Format:
+
+The first line of the input is a string. The input may be “front” or “rear”.
+
+The second line of the input is an integer. The input may be 1 or 2.
+
+Output Format:
+
+Output consists of the string “Left Handed” or “Right Handed”.
+
+Sample Input:
+
+front
+
+1
+
+Sample Output:
+
+Left Handed'''
+#program
+x=input( )
+y=int(input( ))
+if(x=='front' and y==1) or (x=='rear' and y==2):
+    print("left handed")
+elif(x=='front' and y==2) or(x=='rear' and y==1):
+    print("right handed")
+else:
+    print("Invalid Input")
+*-----------------------------------------------------------------*
+
+#(13)Intersection of a Circle
+'''In this problem you must write a program that determines if two circles intersect each other. The input to your program will be the <x, y> coordinates for the center of each circle, followed by the radius(r) of each circle. The output will state whether the circles overlap, do not overlap, or are tangential (i.e., tangential circles touch each other at just one common point).
+
+Input Format:
+
+Input consists of 6 integers. The first integer corresponds to the x-coordinate of the centre of the first circle. The second integer ccorresponds to the y-coordinate of the centre of the first circle. The third integer corresponds to the radius of the first circle. The next 3 integers correspond to the x,y and radius of the second circle.
+
+Output Format:
+
+The output consists of a single line which contains any of these 3 strings --- “The circles are tangential”, “The circles overlap”, “The circles do not overlap”
+
+Sample Input 1:
+
+10
+
+10
+
+3
+
+10
+
+6
+
+1
+
+Sample Output 1:
+
+The circles are tangential
+
+Sample Input 2:
+
+8
+
+8
+
+3
+
+8
+
+4
+
+2
+
+Sample Output 2:
+
+The circles overlap'''
+#program
+x1=int(input( ))
+y1=int(input( ))
+r1=int(input( ))
+x2=int(input( ))
+y2=int(input( ))
+r2=int(input( ))
+d=((((x1-x2)**2)+((y1-y2)**2))**0.5)
+if (r1+r2)==d:
+    print("the circles are tangential")
+elif(r1+r2)<d:
+    print("The circles do not overlap")
+elif(r1+r2)>d:    
+    print("The circles overlap")
+*-------------------------------------------------------------------------*
+
+#(14)Microwave Oven
+A microwave oven manufacturer recommends that when heating two items, add 50% to the heating time, and when heating three items double the heating time. Heating more than three items at once is not recommended. Write a program that asks the user for the number of items and the single-item heating time. The program then writes out the recommended heating time.
+
+Input Format:
+
+The first input is an integer which corresponds to the number of items. The second integer is a float which corresponds to the single item heating time.
+
+Output Format:
+
+Refer sample input and output for further formatting specifications.
+
+Note:All text in bold corresponds to input and the rest corresponds to output
+
+Sample Input and Output 1:
+
+Enter the number of items
+
+2
+
+Enter the single item heating time
+
+5.0
+
+The recommended heating time is 7.50
+
+ Sample Input and Output 2:
+
+Enter the number of items
+
+4
+
+Enter the single item heating time
+
+5.0
+
+Number of items is more'''
+#program
+print("Enter the number of items")
+a=int(input( ))
+print("Enter the single item heating time")
+b=float(input( ))
+x=b+(50/100)*b
+y=b+2*b
+if a==2:
+    print(" the recommended heating time is %.2f" %x)
+elif a==3:
+    print("the recommended heating time is %2.f" %y)
+else:
+    print("Number of items is more")
+*-------------------------------------------------------------------------------------*
+
+
+
+
+
 
 
 
