@@ -64,3 +64,325 @@ if a>='a' and a<='z' or a>='A' and a<'Z':
 else:
     print("not an alphabet")
 *------------------------------------------------------------*
+
+#(3)Grading System
+'''The newly appointed Vice Chancellor of Anna University wanted to create a automated grading system for the students to check their grade. When a student enter a mark, the grading system displays the corresponding grade.
+
+Write a program to solve the given problem.
+
+ 
+
+Marks scored
+
+Grade
+
+100
+
+S
+
+(90,100)
+
+A
+
+(80,90)
+
+B
+
+(70,80)
+
+C
+
+(60,70)
+
+D
+
+(50,60)
+
+E
+
+<50
+
+F
+
+ 
+
+ 
+
+ 
+
+The interval [a,b) includes all numbers greater than or equal to a and less than b.
+
+ Input and Output Format:
+
+Input consists of a single integer which corresponds to the marks scored by the student. Print Invalid Input if it is not in the range 0 to 100.
+
+Refer sample input and output for formatting specifications.
+
+Sample Input 1:
+
+85
+
+Sample Output 1:
+
+B
+
+Sample Input 2:
+
+850
+
+Sample Output 2
+
+Invalid Input'''
+#program
+a=int(input( ))
+if a==100:
+    print("S")
+elif a<100 and a>=90:
+    print("A")
+elif a<90 and a>=80:
+    print("B")
+elif a<80 and a>=70:
+    print("C")
+elif a<70 and a>=60:
+    print("D")
+elif a<60 and a>=50:
+    print("E")
+elif a<50:
+    print("F")
+else:
+    print("invalid input")
+*---------------------------------------------------------------------*
+
+#(4)Profit or Loss
+'''A fruitseller buys a dozen mango at Rs.X. He sells 1 mango at Rs.Y. Write a program to determine the profit or loss in Rs. for the fruitseller.
+
+ Input and Output Format:
+
+Input consists of 2 floating point numbers which correspond to X and Y.
+
+Refer sample input and output for formatting specifications. .
+
+ Sample Input1:
+
+60.0
+
+4
+
+Sample Output1:
+
+Enter the price of a dozen mangoes
+
+Enter the price at which 1 mango is being sold
+
+Loss : Rs.12.00
+
+Sample Input 2:
+
+60.0
+
+6
+
+Sample Output 2:
+
+Enter the price of a dozen mangoes
+
+Enter the price at which 1 mango is being sold
+
+Profit : Rs.12.00
+
+Sample Input 3:
+
+60.0
+
+5
+
+Sample Output 3:
+
+Enter the price of a dozen mangoes
+
+Enter the price at which 1 mango is being sold
+
+No profit nor loss'''
+#program
+cp=float(input("Enter the price of a dozen mangoes\n"))
+mango=float(input("Enter the price at which 1 mango is being sold\n"))
+sp=12*mango
+if sp>cp:
+    p=('%.2f' %(sp-cp))
+    print(f"profit: RS.{p}")
+elif sp<cp:
+    l=('%.2f' %(cp-sp))
+    print(f"loss: RS.{l}")
+else:
+    print("no profit nor loss")
+*------------------------------------------------------------*
+
+#(5)Fee Collection
+'''Requested files: fee.py (Download)
+Type of work: Individual work
+Write a program to determine the fee amount to be collected from a student. The input to the program are the type of the student, tuition fee, bus fee, hostel fee.
+
+Refer the table below for fee details.
+
+Student Type
+
+Student Type denoted as
+
+Fee Details
+
+Merit Seat Day Scholar
+
+MSDS
+
+Tuition fee + Bus fee
+
+Merit Seat Hosteller
+
+MSH
+
+Tuition fee + Hostel fee
+
+Management Seat Day Scholar
+
+MGSDS
+
+150% of Tuition fee + Bus fee
+
+Management Seat Hosteller
+
+MGSH
+
+150% of Tuition fee + Hostel fee
+
+ 
+
+Input and Output Format:
+
+Input consists of a string (student type), tuition fee (float), bus fee (float) and hostel fee (float). All floating point numbers are displayed correct to 2 decimal places.
+
+Refer sample input and output for formatting specifications.
+
+All text in bold corresponds to input and the rest corresponds to output.
+
+Sample Input and Output:
+
+Enter the student type
+
+MSH
+
+Enter tuition fee
+
+40000
+
+Enter hostel fee
+
+50000
+
+The fees to be paid by the student is Rs.90000.00'''
+#program
+x=str(input("Enter the student type\n"))
+if x=='MSDS':
+    TF=int(input("Enter tuition fee \n"))
+    BF=int(input("Enter bus fee \n"))
+    print("The fees to be paid by the student is Rs.",'%.2f' %(TF+BF))
+elif x=='MSH':
+    TF=int(input("Enter tuition fee \n"))
+    HF=int(input("Enter hostel fee \n"))
+    print("The fees to be paid by the student is Rs.",'%.2f' %(TF+HF))
+elif x=='MGSDS':
+    TF=int(input("Enter tuition fee \n"))
+    BF=int(input("Enter bus fee \n"))
+    print("The fees to be paid by the student is Rs.",'%.2f' %((1.5*TF)+BF))
+elif x=='MGSH':
+    TF=int(input("Enter tuition fee \n"))
+    HF=int(input("Enter hostel fee \n"))
+    print("The fees to be paid by the student is Rs.",'%.2f' %((1.5*TF)+HF))
+*------------------------------------------------------------------------------------------------*
+
+#(6)Y2K Problem Detector
+'''Write a program that asks a user for their birth year encoded as two digits (like "62") and for the current year, also encoded as two digits (like "99"). The program is to correctly write out the user’s age in years.
+
+Input Format:
+
+Input consists of 2 integers. 
+
+The first integer corresponds to the last 2 digits of the birth year. 
+
+The second integer corresponds to the last 2 digits of the current year.
+
+Output Format:
+
+Refer sample input and output for further formatting specifications.
+
+[All text in bold corresponds to input and the rest corresponds to output]
+
+Sample Input and Output:
+
+Enter Year of Birth
+
+62
+
+Enter Current year
+
+99
+
+Your age is 37
+
+The program will have to determine when a two digit value such as "62" corresponds to a year in the 20th century ("1962") or the 21st century. Here is another run of the program, where "00" is taken to mean the year 2000:
+
+Enter Year of Birth
+
+62
+
+Enter Current year
+
+00
+
+Your age is 38
+
+ Assume that ages are not negative. Another run of the program:
+
+ Enter Year of Birth
+
+27
+
+Enter Current year
+
+07
+
+Your age is 80
+
+In the following run, the age of the person could be 6 or 106 depending on the assumptions. Assume that the age will always be less than or equal to 100.
+
+ Enter Year of Birth
+
+01
+
+Enter Current year
+
+07
+
+Your age is 6
+
+ Enter Year of Birth
+
+62
+
+Enter Current year
+
+99
+
+Your age is 37'''
+#program
+by=int(input('enter year of birth \n'))
+cy=int(input('enter current year \n'))
+if by>cy:
+    print('your age is',(100+cy)-by)
+else:
+    print('your age is',cy-by)
+*-------------------------------------------------------------*
+
+
+
+
+
