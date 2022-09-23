@@ -1,0 +1,78 @@
+#(1)Add an item
+'''Write a Python program to add an item in a tuple. Problem Solution 1.create a tuple 2.use merge of tuples with the + operator you can add an element and it will create a new tuple 3.add items in a specific index[:5] 4.convert the tuple to list 5.append the list(30)
+
+Sample input:
+
+(4, 6, 2, 8, 3, 1)                                             
+
+(4, 6, 2, 8, 3, 1, 9)                                            
+
+(4, 6, 2, 8, 3, 15, 20, 25, 4, 6, 2, 8, 3)   
+
+Sample output:                           
+
+ (4, 6, 2, 8, 3, 15, 20, 25, 4, 6, 2, 8, 3, 30)'''
+#program
+a=(4, 6, 2, 8, 3, 1)
+print(a)
+a=a+(9,)
+print(a)
+a=a[:5]+(15,20,25)+a[:5]
+print(a)
+b=list(a)
+b.append(30)
+x=tuple(b)
+print(b)
+*------------------------------------------------------*
+
+#(2)Length of a tuple
+'''Write a Python program to find the length of a tuple.
+
+Sample Input/Output: 
+
+
+cyfuno
+
+('c', 'y', 'f', 'u', 'n', 'o')
+
+6'''
+#program
+s=('c', 'y', 'f', 'u', 'n', 'o')
+print(s)
+print(len(s))
+*-------------------------------------------------------------*
+
+#(3)Reverse a Tuple
+'''Write a Python program to reverse a tuple.
+
+Sample Input & Output:
+
+cyfuno
+
+('o', 'n', 'u', 'f', 'y', 'c')'''
+#program
+a=('c', 'y', 'f', 'u', 'n', 'o')
+print(a[::-1])
+*--------------------------------------------------------*
+
+#(4)Repeated element in a tuple
+'''Write a python program to find the repeated items of a tuple.
+
+Sample Input:
+
+2,4,7,8,5,2,4,9,4
+
+4
+
+Sample Output:
+
+ 3'''
+ #program
+a=(2,4,5,6,2,3,4,4,7)
+b=int(input())
+print(a)
+print(a.count(b))
+*----------------------------------------------------------*
+
+
+
