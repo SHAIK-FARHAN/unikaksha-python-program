@@ -161,3 +161,170 @@ for i in a:
     sum=sum+i
 print(sum/n)
 *-----------------------------------------------*
+
+#(5)Sort the list
+'''Write a Python Program to merge two lists and sort it.
+
+Input & Output Format:
+
+Input consists of two integers and two lists.
+
+First input consists of size of the first list.
+
+Second inputs corresponds to the elements of the first list.
+
+Third input consists of size of the second list.
+
+Fourth inputs corresponds to the elements of the second list.
+
+Output consists of the sorted elements
+
+Sample Input & Output:
+
+3
+
+1
+
+2
+
+3
+
+3
+
+1
+
+5
+
+6
+
+
+Sorted list is: [1, 1, 2, 3, 5, 6]'''
+#program
+a=[]
+b=[]
+n1=int(input())
+for i in range(1,n1+1):
+    a.append(int(input()))
+n2=int(input())
+for j in range(1,n2+1):
+    b.append(int(input()))
+a=a+b
+a.sort()
+print("Sorted list is:",a)
+*-------------------------------------------------------------*
+
+#(6)Remove Duplicates
+'''The program takes a lists and removes the duplicate items from the list. Problem Solution Take the number of elements in the list and store it in a variable. Accept the values into the list using a for loop and insert them into the list. Use a for loop to traverse through the elements of the list. Use an if statement to check if the element is already there in the list and if it is not there, append it to another list. Print the non-duplicate items of the list. Exit.
+
+Input & Output Format:
+
+Input consists of one integer and one list.
+
+First input consists of the size of the list N.
+
+Next inputs corresponds to the list elements.
+
+Output consists of the unique elements.
+
+Sample Input & Output:
+
+5
+
+10
+
+10
+
+20
+
+20
+
+20  
+
+[10, 20]'''
+#program
+a=[]
+b=[]
+n=int(input())
+for i in range(1,n+1):
+    a.append(int(input()))
+for i in a:
+    if i not in b:
+        b.append(i)
+        print(b)
+*----------------------------------------------------------*
+
+#(7)Second Largest Number
+'''Python Program to Find the Second Largest Number in a List Problem Description The program takes a list and prints the second largest number in the list. Problem Solution 1. Take in the number of elements and store it in a variable. 2. Take in the elements of the list one by one. 3. Sort the list in ascending order. 4. Print the second last element of the list. 5. Exit.
+
+Input Format: 
+
+Input consists of n + 1 integers. 
+
+First integer corresponds to the size 
+
+The next n inputs corresponds to the elements in the list.
+
+Sample Input: 
+
+4
+
+23
+
+56
+
+39 
+
+11 
+
+Sample Output: 
+
+39'''
+#program
+a=[ ]
+n=int(input( ))
+for i in range(0,n):
+    a.append(int(input( )))
+a.sort( )
+print(a[n-2])
+*-----------------------------------------------*
+
+#(8)Swap the numbers
+'''Python Program to swap the first and last value of a list. Take the number of elements in the list and store it in a variable .Accept the values into the list using a for loop and insert them into the list. Using a temporary variable, switch the first and last element in the list. Print the newly formed list. Exit.
+
+Input & Output Format:
+Input consists of one integer and one list.
+
+First input consists of the size of the list.
+
+Second input consists of the list elements.
+
+Output consists of the swapped list.
+
+Sample Input & Output:
+
+5
+
+2
+
+3
+
+6
+
+4
+
+9
+
+
+[9, 3, 6, 4, 2]'''
+#program
+a=[]
+n=int(input())
+for i in range(1,n+1):
+    a.append(int(input()))
+c=a[0]
+a[0]=a[n-1]
+a[n-1]=c
+print(a)
+*---------------------------------------------------------*
+
+
