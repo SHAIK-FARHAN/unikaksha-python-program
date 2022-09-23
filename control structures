@@ -1,0 +1,168 @@
+#(1)Amoeba Multiplication
+'''The environmental eco club  have discovered a new Amoeba that grows in the order of a Fibonacci series every month. They are exhibiting their amoeba in a national conference. They want to know the size of the amoeba at a particular time instant. If a particular month’s index is given can you write a  program that displays the amoeba’s size……???
+//Use Dynamic Programming Strategy
+
+Note: The size of the amoeba on month 1, 2, 3, 4, 5, 6,7 ..will be 0, 1, 1, 2, 3, 5, 8 respectively.
+
+[All text in bold corresponds to input and the rest to output]
+
+Sample input and Output 1:
+
+Enter the number of Months :
+
+7
+
+The amoeba size is 8
+
+Sample input and Output 2:
+
+Enter the number of Months :
+
+12
+
+The amoeba size is 89'''
+#program
+print("Enter the number of months: ")
+A=int(input( ))
+x=0
+y=1
+for i in range (2,A):
+    z=x+y
+    x=y
+    y=z
+print("The amoeba size is",z)
+*---------------------------------------------------*
+
+#(2)Factorial
+'''Write a program to determine whether n is a factorial number or not. A factorial number is a number that is a factorial of another number.
+
+Input Format:
+
+Input consists of a single integer which corresponds to n.
+
+Output Format:
+
+Output consists of a string - “yes” or “no”
+
+Sample Input 1
+
+6
+
+Sample Output 1
+
+yes
+
+Sample Input 2
+
+12
+
+Sample Output 2
+
+no'''
+#program
+n=int(input( ))
+a=1
+for i in range(1,n+1):
+    a=a*i
+    if n==a:
+        print("yes")
+        break
+else:
+    print("no")
+*-----------------------------------------------------*
+
+#(3)Sum of Digits
+'''Write a program to find the sum of digits in a given number. Program to find the sum of digits of the given number is discussed here. 
+For example, let the input number be 719. The sum of digits of 719 = 7 + 1 + 9 = 17
+Input & Output Format:
+
+Input consists of one integer.
+
+Output consists of sum of digits.
+
+Sample Input:
+
+719
+
+Sample Output:
+
+17'''
+#program
+n=int(input())
+a=1
+sum=0
+for i in range(n):
+    a=n%10
+    sum=sum+a
+    n=n//10
+print(sum)
+*-----------------------------------------------------------*
+
+#(4)Friendly Pair
+''' Program to find if the given numbers are Friendly pair or not (Amicable or not) is discussed here. Friendly Pair are two or more numbers with a common abundance.
+
+Input & Output format: 
+
+Input consists of 2 integers.
+The first integer corresponds to number 1 and the second integer corresponds to number 2.
+If it is a Friendly Pair display Friendly Pair or displays Not Friendly Pair.
+For example,6 and 28 are Friendly Pair.
+
+(Sum of divisors of 6)/6 = (Sum of divisors of 28)/28.
+
+Sample Input:
+6
+
+28
+
+Sample Output:
+
+Friendly Pair'''
+#program
+a=int(input( ))
+b=int(input( ))
+sum1=0
+sum2=0
+for i in range(1,a):
+    if a%i==0:
+        sum1=sum2+i
+for j in range (1,b):
+    if b%i==0:
+        sum1=sum2+j
+if sum1/a==sum2/b:
+    print("Friendly Pair")
+else:
+    print("not Friendly Pair")
+*----------------------------------------------------*
+
+#(5)Harshard Number
+'''Program to check whether a number is a Harshad number or not (Niven number) is discussed here. Harshad Number is an integer that is divisible by the sum of its digits.
+
+ Input format:
+
+Input consists of 1 integer.
+If the given number is Harshad Number display Harshad Number or display Not Harshad Number.
+Sample Input:
+
+1729
+
+ Sample Output:
+
+Harshad Number'''
+#program
+a=int(input( ))
+c=a
+sum=0
+for i in range (1,a):
+    n=a%10
+    sum=sum+n
+    a=a//10
+if c%sum==10:
+    print("Harshad Number")
+else:
+    print("Not Harshad Number")
+*-----------------------------------------------------------------------*
+
+
+
+
