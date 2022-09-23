@@ -1,0 +1,163 @@
+#(1)Create a List
+'''Write a program to create a list and display it. 
+
+Input format:
+
+Input consist of n+1 integers 
+
+First integer corresponds to the size of the list 
+
+Next n inputs corresponds to the elements in the list 
+
+Output format: 
+
+Output is an integer list
+
+Sample Input
+
+4  
+
+1 2 3 4
+
+Output
+
+1 2 3 4'''
+#program
+a=[]
+n=int(input( ))
+for i in range(1,n+1):
+    a.append(int(input()))
+print(a)
+*------------------------------------------*
+
+#(2)Largest number in a list
+'''Write a Python Program to find the largest number in a list
+
+Input & Output Format:
+
+Input consists of one list and one integer.
+
+First input consists of a size of a list.
+
+Second inputs corresponds to the size of the list.
+
+Output consists of the largest element.
+
+Sample Input:
+
+5
+
+1
+
+2
+
+3
+
+6
+
+5
+
+Sample Output:
+
+6'''
+#program
+a=[]
+n=int(input( ))
+for i in range(1,n+1):
+    a.append(int(input()))
+print(max(a))
+*--------------------------------------------------------*
+
+#(3)Odd or Even
+'''Write a Python Program to put the even and odd elements in a list into two different lists.
+
+Input & Output Format:
+
+Input consists of one integer and one list.
+
+First input consists of the size of the list.
+
+Second input consists of the elements based on the size.
+
+Output consists of two lists.
+
+First list consists of all the even numbers in the list.
+
+Second list consists of all the odd numbers in the list.
+
+Sample Input & Output:
+
+5
+
+1
+
+2
+
+3
+
+6
+
+5
+
+The even list [2, 6]
+
+The odd list [1, 3, 5]'''
+#program
+a=[]
+even=[]
+odd=[]
+n=int(input())
+for i in range(0,n):
+    a.append(int(input()))
+for i in a:
+    if(i%2==0):
+        even.append(i)
+    else:
+        odd.append(i)
+    print("The even list",even)
+    print("The odd list ",odd)
+*---------------------------------------------------*
+#(4)Array Mean
+'''Write a program to find the mean of the elements in the array. 
+
+Input Format: 
+
+Input consists of n+1 integers where n corresponds to the number of elements in the array. 
+
+The first integer corresponds to n and the next n integers correspond to the elements in the array. 
+
+Assume that the maximum number of elements in the array is 20. 
+
+Output Format: 
+
+Output consists of a double value which corresponds to the mean of the array.
+
+ Refer sample input and output for formatting specifications. [All text in bold corresponds to input and the rest corresponds to output.]
+
+Sample Input and Output : 
+
+5
+
+2
+
+4
+
+1
+
+3
+
+1
+
+Sample Output:
+
+ 2.2
+ #program
+ a=[]
+sum=0
+n=int(input())
+for i in range(1,n+1):
+    a.append(int(input( )))
+for i in a:
+    sum=sum+i
+print(sum/n)
+*-----------------------------------------------*
