@@ -45,4 +45,79 @@ a=int(input())
 print(a)
 *-----------------------------------------*
 
+#(5)Float Input
+'''Python programming has several in-built functions to perform input and output tasks. Two commonly used functions for I/O (Input/Output) are print and input(). Write a program to get float as input and print it. The input() function reads formatted input from the keyboard. When the user enters a float, it is stored in variable test Float. Use '%.2f' in the print() to display float value with 2 precisions. NOTE: Bold letters or words are Input and rest are output statements.
+
+Sample Input :
+
+56.2425
+
+Sample Output :
+
+56.24'''
+#program
+a=float(input())
+print('%.2f' %a)
+*----------------------------------------------*
+
+#(6)Character Input
+'''Python programming has several in-built functions to perform input and output tasks. Two commonly used functions for I/O (Input/Output) are print and input().. Write a program to get a character as input and print it. The input() function reads formatted input from the keyboard. When the user enters a character, it is stored in variable test Character. NOTE: Bold letters or words are Input and rest are output statements.
+
+Sample Input:
+
+z
+
+Sample Output:
+
+z'''
+#program
+a=input()
+print(a)
+*-----------------------------------------------*
+
+#(7)String Input
+'''Python programming has several in-built functions to perform input and output tasks. Two commonly used functions for I/O (Input/Output) are print() and input(). Write a program to get the string as input and print it. The input() function reads formatted input from the keyboard.  
+
+Sample Input :
+
+Programmer
+
+Sample Output :
+
+Programmer'''
+#program
+a=str(input())
+print(a)
+*---------------------------------------------*
+
+#(8)Ascii-I
+'''ASCII - American Standard Code for Information Interchange. Write a program to get a character as input and print it's ASCII value. When a character is entered, the character itself  stored.  And when we displayed that value using "int()"  type casting , the entered character is displayed as Ascii value. NOTE: Bold letters or words are Input and rest are output statements.
+
+Sample Input :
+
+g
+
+Sample Output:
+
+103'''
+#program
+a=input()
+print(ord(a))
+*--------------------------------------------------*
+
+#(9)Ascii-II
+'''ASCII - American Standard Code for Information Interchange. Write a program to get a number(ASCII) as input and print its equivalent character. You can display a character if you know ASCII code of that character. 
+
+Sample Input:
+
+103
+
+Sample Output:
+
+g'''
+#program
+a=int(input())
+print(chr(a))
+*--------------------------------------------*
+
 
