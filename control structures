@@ -262,6 +262,41 @@ else:
     print("not a Perfect Number")
 *--------------------------------------------------------*
 
+#(9)Prime Number
+'''Write a program to find whether the given number is Prime number or Not.
+
+Input & Output Format:
+
+Input consists of one integer.
+
+Output consists of a string.
+
+If it is prime then display "Prime Number" or if it is not prime then display "Not a Prime"
+
+Sample Input:
+
+2
+
+Sample Output:
+
+Prime Number'''
+#program
+num=int(input())
+if num>1:
+    for i in range(2,int(num/2)+1):
+        if(num%i)==0:
+            print(num,"not a prime")
+            break
+        else:
+            print(num,"is a prime number")
+    else:
+        print(num,"is not a prime number")
+*---------------------------------------------------------*
+  
+#(10)Prime Numbers in a Range
+'''
+
+
 
 
 
